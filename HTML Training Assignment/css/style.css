@@ -1,0 +1,111 @@
+*{
+    /* border:1px solid red; */
+}
+.container {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left img {
+  border-radius: 50%;
+  border: 20px solid #ffffff;
+  box-shadow: 0px 4px 31px #0000000a;
+  /* margin: 72px 0px 72px 166px; */
+  margin: 72px 0px 72px 0;
+}
+
+.right img {
+  /* margin: 106px 0 0 164px; */
+  margin: 106px 0 0 0;
+  width: 272px;
+  height: 58px;
+}
+
+.right h1 {
+  /* margin: 19.17px 0 0 163px; */
+  margin: 19.17px 0 0 0;
+  text-align: left;
+  font: normal normal 300 40px/47px Roboto;
+  width: 500px;
+  height: 100px;
+}
+.right h1 span {
+  font: normal normal 900 40px/53px Roboto;
+  color: #C8242F;
+}
+.right h2 {
+  /* margin: 31.87px 0 0 162px; */
+  margin: 31.87px 0 0 0;
+  text-align: left;
+  font: normal normal normal 25px/33px Roboto;
+  font-weight: lighter;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+}
+
+#username {
+  /* margin: 23.45px 0 0 164.5px; */
+  margin: 23.45px 0 0 0;
+  width: 429px;
+  height: 49px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+}
+#password {
+  /* margin: 27px 0 0 164.5px; */
+  margin: 27px 0 0 0;
+  width: 429px;
+  height: 49px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+}
+input {
+  text-indent: 14.5px;
+  font: normal normal normal 15px/20px Roboto;
+}
+#loginBtn {
+  /* margin: 30.5px 0 0 164px; */
+  margin: 30.5px 0 0 0;
+  width: 138px;
+  height: 45px;
+  /* UI Properties */
+  background: #c8242f 0% 0% no-repeat padding-box;
+  border-radius: 23px;
+  color: white;
+  font: normal normal medium 18px/24px Roboto;
+  font-size: 18px;
+  border-color:red;
+}
+
+#forgotPassword {
+  margin: 42.63px 0 0 170.44px;
+  /* margin: 42.63px 0 0 0; */
+  width: 121px;
+  height: 20px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 15px/20px Roboto;
+  letter-spacing: 0px;
+  color: #adadad;
+  text-decoration: none;
+}
+.formFields p {
+  /* margin: 23.13px 0 0 164px; */
+  margin: 23.13px 0 0 0;
+  font: normal normal normal 15px/20px Roboto;
+letter-spacing: 0px;
+color: #ADADAD;
+}
+.formFields p a {
+  text-decoration: none;
+  font: normal normal normal 15px/20px Roboto;
+  color: #c8242f;
+}
