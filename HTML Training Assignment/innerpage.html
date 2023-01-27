@@ -1,0 +1,101 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="dashboard-container">
+
+        <div class="dashboard-header">
+            <div class="dashboard-left">
+                <img src="./images/menu-bar.svg" alt="menu-bar" id="dashboard-menubar">
+                <img src="./images/header-logo.svg" alt="hero-logo" id="dashboard-header-logo">
+
+            </div>
+            <div class="dashboard-right">
+                <img src="./images/search-icon.svg" alt="search-icon" id="dashboard-search-icon">
+                <input type="text" name="search-bar" id="dashboard-search-bar" placeholder="Search">
+                <img src="./images/notification-icon.svg" alt="notification-icon" id="dashboard-notification">
+                <img src="./images/profile.png" alt="profile" id="dashboard-profile">
+                <p id="dashboard-username">John Doe</p>
+                <img src="./images/downward-arrow.svg" alt="downward-arrow" id="dashboard-downward-arrow">
+            </div>
+        </div>
+
+        <div class="dashboard-main-wrapper">
+
+            <div class="dashboard-left-navbar">
+                <div class="dashboard-nav-buttons dashboard-nav-text ">
+                    <img src="./images/dashboard-default.svg" alt="dashboard-icon">
+                    <p> Dashboard </p>
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text dashboard-active">
+                    <img src="./images/graph-active.svg" alt="graph-default">
+                    Analysis
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text">
+                    <img src="./images/inbox-default.svg" alt="inbox-default">
+                    Inbox
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text">
+                    <img src="./images/clock-default.svg" alt="clock-default">
+                    History
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text">
+                    <img src="./images/user-default.svg" alt="user-default">
+                    Users
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text">
+                    <img src="./images/maintenance-default.svg" alt="maintenance-default">
+                    Maintenance
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text">
+                    <img src="./images/setting-default.svg" alt="setting-default">
+                    Setting
+                </div>
+            </div>
+
+            <div class="dashboard-main-content">
+                <p class="dashboard-header-text">Analysis</p>
+
+                <div class="analysis-main-content">
+                    <p class="analysis-form-header">One column</p>
+                    <div class="analysis-main-content-form-tags">
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1">&nbsp;</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">&nbsp;</label>
+                              <select class="form-control" id="exampleFormControlSelect1" aria-placeholder="Dropdown">
+                                <option>Dropdown</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            
+                            <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Example textarea</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
