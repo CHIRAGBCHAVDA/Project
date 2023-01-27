@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+
 </head>
+
 <body>
     <div class="dashboard-container">
 
@@ -20,43 +28,249 @@
                 <input type="text" name="search-bar" id="dashboard-search-bar" placeholder="Search">
                 <img src="./images/notification-icon.svg" alt="notification-icon" id="dashboard-notification">
                 <img src="./images/profile.png" alt="profile" id="dashboard-profile">
-                <p id="dashboard-username">John  Doe</p>
+                <p id="dashboard-username">John Doe</p>
                 <img src="./images/downward-arrow.svg" alt="downward-arrow" id="dashboard-downward-arrow">
             </div>
         </div>
 
-        <div class="dashboard-left-navbar">
-            <div class="dashboard-nav-buttons dashboard-nav-text dashboard-active">
-                <img src="./images/dashboard-active.svg" alt="dashboard-icon" id="dashboard-active-icon">
-                 <p> Dashboard </p>
+        <div class="dashboard-main-wrapper">
+
+            <div class="dashboard-left-navbar">
+                <div class="dashboard-nav-buttons dashboard-nav-text dashboard-active">
+                    <img src="./images/dashboard-active.svg" alt="dashboard-icon" id="dashboard-active-icon">
+                    <p> Dashboard </p>
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text">
+                    <img src="./images/graph-default.svg" alt="graph-default">
+                    Analysis
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text">
+                    <img src="./images/inbox-default.svg" alt="inbox-default">
+                    Inbox
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text">
+                    <img src="./images/clock-default.svg" alt="clock-default">
+                    History
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text">
+                    <img src="./images/user-default.svg" alt="user-default">
+                    Users
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text">
+                    <img src="./images/maintenance-default.svg" alt="maintenance-default">
+                    Maintenance
+                </div>
+                <div class="dashboard-nav-buttons dashboard-nav-text">
+                    <img src="./images/setting-default.svg" alt="setting-default">
+                    Setting
+                </div>
             </div>
-            <div class="dashboard-nav-buttons dashboard-nav-text">
-                <img src="./images/graph-default.svg" alt="graph-default">
-                 Analysis
+
+            <div class="dashboard-main-content">
+                <p class="dashboard-header-text">Dashboard</p>
+                <div class="dashboard-insights">
+                    <div class="dashboard-insights-items-wrapper">
+                        <div class="dashboard-insights-items">
+                            <div class="dashboard-insights-items-logo">
+                                <img src="./images/star.svg" alt="star">
+                            </div>
+                            <div class="dashboard-insights-items-texts">
+                                <p class="insights-number">23456</p>
+                                <p class="insights-text">New Products</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-insights-items-wrapper">
+                        <div class="dashboard-insights-items">
+                            <div class="dashboard-insights-items-logo">
+                                <img src="./images/new-product.svg" alt="star">
+                            </div>
+                            <div class="dashboard-insights-items-texts">
+                                <p class="insights-number">2345</p>
+                                <p class="insights-text">Added Products</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-insights-items-wrapper">
+                        <div class="dashboard-insights-items">
+                            <div class="dashboard-insights-items-logo">
+                                <img src="./images/total-product.svg" alt="star" class="total-product-img">
+                            </div>
+                            <div class="dashboard-insights-items-texts">
+                                <p class="insights-number">32,456</p>
+                                <p class="insights-text">Total Products</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-insights-items-wrapper">
+                        <div class="dashboard-insights-items">
+                            <div class="dashboard-insights-items-logo">
+                                <img src="./images/dollar-filled.svg" alt="star">
+                            </div>
+                            <div class="dashboard-insights-items-texts">
+                                <p class="insights-number">5678</p>
+                                <p class="insights-text">Today's Sale</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-insights-items-wrapper">
+                        <div class="dashboard-insights-items">
+                            <div class="dashboard-insights-items-logo">
+                                <img src="./images/money-bag.svg" alt="star">
+                            </div>
+                            <div class="dashboard-insights-items-texts">
+                                <p class="insights-number">33,5342</p>
+                                <p class="insights-text">Total Sale</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="dashboard-graphs">
+                    <div class="dashboard-left-graph">
+
+
+                        <div class="graph-text">
+                            <p id="graph-text-sale">Sale</p>
+                            <div class="graph-text-utilities">
+                                <p class="graph-text-utilitis-weekly-monthly">Weekly</p>
+                                <p class="graph-text-utilitis-weekly-monthly">Monthly</p>
+                                <p id="yearly-text-in-graph">Yearly</p>
+                            </div>
+                        </div>
+                        <div class="graph-left-image">
+                            <img src="./images/data-graph.png" alt="data-graph">
+                        </div>
+                    </div>
+                    <div class="dashboard-right-graph">
+                        <div class="dashboard-graph-right-text">
+                            <h2 id="dashboard-graph-right-text">
+                                Sales by Country
+                            </h2>
+                        </div>
+                        <div class="dashboard-right-graph-image">
+                            <img src="./images/pie-chart.svg" alt="pie-chart">
+                        </div>
+                        <div class="dashboard-right-graph-bullets">
+                           <li id="li-1">United States Of America</li>
+                           <li id="li-2">Canada</li>
+                           <li id="li-3">Russia</li>
+                           <li id="li-4">India</li>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-invoices-wrapper">
+
+                
+                <div class="dashboard-invoices">
+                    <div class="dashboard-invoices-header">
+                        <h2 id="dashboard-invoices-header-left">
+                            Invoices
+                        </h2>
+                        <h5 id="dashboard-invoices-header-text-right">
+                            View All
+                        </h5>
+                    </div>
+                </div>
+                <div class="invoices-table">
+                    <table id="dashboard-invoice-table" class="table">
+                        <tbody>
+                        <tr class="dashboard-invoice-table-header">
+                            <th>INVOICE</th>
+                            <th>COMPANY NAME</th>
+                            <th>EMAIL</th>
+                            <th>DUE DATE</th>
+                            <th>STATUS</th>
+                            <th>AMOUNT</th>
+                        </tr>
+                        
+                            <tr>
+                                <td>651535</td>
+                                <td>Public Adjusting Firm</td>
+                                <td>georgia.young@example.com</td>
+                                <td>24 May, 2020</td>
+                                <td><div class="invoice-status-box-paid"> Paid</div></td>
+                                <td>$47,800</td>
+                            </tr>
+                            <tr>
+                                <td>558612</td>
+                                <td>Other</td>
+                                <td>jessica.hanson@example.com</td>
+                                <td>24 May, 2020</td>
+                                <td><div class="invoice-status-box-paid"> Paid</div></td>
+                                <td>$98,000</td>
+                            </tr>
+                            <tr>
+                                <td>558612</td>
+                                <td>Vendor</td>
+                                <td>alma.lawson@example.com</td>
+                                <td>8 Sep, 2020</td>
+                                <td><div class="invoice-status-box-paid"> Paid</div></td>
+                                <td>$20,900</td>
+                            </tr>
+                            <tr>
+                                <td>558612</td>
+                                <td>Property Management Company</td>
+                                <td>kenzi.lawson@example.com</td>
+                                <td>22 Oct, 2020</td>
+                                <td><div class="invoice-status-box-paid"> Paid</div></td>
+                                <td>$10,570</td>
+                            </tr>
+                            <tr>
+                                <td>651535</td>
+                                <td>Subcontractor Company</td>
+                                <td>jackson.graham@example.com</td>
+                                <td>1 Feb, 2020</td>
+                                <td><div class="invoice-status-box-failed">Failed</div></td>
+                                <td>$10,200</td>
+                            </tr>
+                            <tr>
+                                <td>653518</td>
+                                <td>Mortgage Company</td>
+                                <td>felicia.reid@example.com</td>
+                                <td>22 Oct, 2020</td>
+                                <td><div class="invoice-status-box-pending">Pending</div></td>
+                                <td>$12,600</td>
+                            </tr>
+                            <tr>
+                                <td>487441</td>
+                                <td>TPA</td>
+                                <td>dolores.chambers@example.com</td>
+                                <td>21 Sep, 2020</td>
+                                <td><div class="invoice-status-box-paid"> Paid</div></td>
+                                <td>$11,170</td>
+                            </tr>
+                            <tr>
+                                <td>267400</td>
+                                <td>Fire Department</td>
+                                <td>nevaeh.simmons@example.com</td>
+                                <td>17 Oct, 2020</td>
+                                <td><div class="invoice-status-box-failed">Failed</div></td>
+                                <td>$28,000</td>
+                            </tr>
+                            <tr id="last-row-of-invoice">
+                                <td>449003</td>
+                                <td>Insurance Carrier</td>
+                                <td>curtis.weaver@example.com</td>
+                                <td>21 Sep, 2020</td>
+                                <td><div class="invoice-status-box-paid"> Paid</div></td>
+                                <td>$10,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="dashboard-nav-buttons dashboard-nav-text">
-                <img src="./images/inbox-default.svg" alt="inbox-default">
-                 Inbox
             </div>
-            <div class="dashboard-nav-buttons dashboard-nav-text">
-                <img src="./images/clock-default.svg" alt="clock-default">
-                 History
-            </div>
-            <div class="dashboard-nav-buttons dashboard-nav-text">
-                <img src="./images/user-default.svg" alt="user-default">
-                 Users
-            </div>
-            <div class="dashboard-nav-buttons dashboard-nav-text">
-                <img src="./images/maintenance-default.svg" alt="maintenance-default">
-                 Maintenance
-            </div>
-            <div class="dashboard-nav-buttons dashboard-nav-text">
-                <img src="./images/setting-default.svg" alt="setting-default">
-                 Setting
-            </div>
+
+
         </div>
 
 
     </div>
 </body>
+
 </html>
