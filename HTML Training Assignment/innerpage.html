@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/mdb.min.css">
+    <script src="./js/mdb.min.js"></script>
 
 </head>
 
@@ -71,27 +74,258 @@
                     <div class="analysis-main-content-form-tags">
                         <form>
                             <div class="form-group">
-                              <label for="exampleFormControlInput1">&nbsp;</label>
+                              <!-- <label for="exampleFormControlInput1">&nbsp;</label> -->
                               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
                             </div>
                             <div class="form-group">
-                              <label for="exampleFormControlSelect1">&nbsp;</label>
-                              <select class="form-control" id="exampleFormControlSelect1" aria-placeholder="Dropdown">
-                                <option>Dropdown</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                                <label for="dropdown">&nbsp;</label>
+                                <select class="form-select" name="dropdown" aria-label="Dropdown">
+                                    <option selected>Dropdown</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
                             </div>
                             
                             <div class="form-group">
-                              <label for="exampleFormControlTextarea1">Example textarea</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <label for="exampleFormControlTextarea1" class="form-label">&nbsp;</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Multiple Line"></textarea>
                             </div>
-                          </form>
+                        </form>
+                    </div>
+                    <p class="analysis-form-header">Two column</p>
+                    <div class="analysis-main-content-form-tags">
+                        <form>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline ">
+                                        <input type="text" id="typeText" class="form-control border bg-white" />
+                                        <label class="form-label" for="typeText">Username</label>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">&nbsp;</label>
+                                    <input type="password" class="form-control" placeholder="Password" aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="dropdown">&nbsp;</label>
+                                        <select class="form-select" name="dropdown" aria-label="Dropdown">
+                                            <option selected>Dropdown</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+
+                    <p class="analysis-form-header">Three column</p>
+                    <div class="analysis-main-content-form-tags">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-outline ">
+                                        <input type="text" id="typeText" class="form-control border border-danger bg-white" />
+                                        <label class="form-label text-dark" for="typeText">Focus</label>
+                                      </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="password" id="typePassword" class="form-control border bg-white" />
+                                        <label class="form-label" for="typePassword">Password input</label>
+                                      </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input class="form-control disabled" id="formControlReadonly" type="text" value="Readonly input here..." aria-label="John Doe" readonly/>
+                                        <label class="form-label" for="formControlReadonly">Disabled</label>
+                                      </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <p class="analysis-form-header">Four column</p>
+                    <div class="analysis-main-content-form-tags">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" class="form-control is-invalid bg-white border" id="validationServer03" required />
+                                        <label for="validationServer03" class="form-label">Designation</label>
+                                        <div class="invalid-feedback">Enter Valid data</div>
+                                      </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" id="formTextExample1" class="form-control border bg-white" aria-describedby="textExample1" />
+                                        <label class="form-label" for="formTextExample1">Name</label>
+                                      </div>
+                                      <div id="textExample1" class="form-text">
+                                        Enter your full name as per ID
+                                      </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline ">
+                                        <input type="text" id="typeText" class="form-control border bg-white" />
+                                        <label class="form-label" for="typeText">Username</label>
+                                      </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <select class="form-select bg-white border" name="dropdown" aria-label="Dropdown">
+                                            <option selected>Dropdown</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <p class="analysis-form-header">Other Design Elements</p>
+                    <div class="analysis-main-content-form-tags my-3">
+                        <h2 class="file-upload-header-of-inner">File Upload</h2>
+                        <form>
+                            <div class="d-flex align-items-center">
+
+                                <label for="file-input" class="upload-image-and-text-wrapper border border-danger my-2">
+                                    <img src="./images/cloud-upload-icon.svg" alt="upload-image" class="upload-image">
+                                    <span id="upload-text">Upload</span>
+                                </label>
+                                <input type="file" name="file-input" class="d-none"> 
+                                <span class="text-gray mx-2">No item selected</span>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="analysis-main-content-form-tags">
+                        <h2 class="file-upload-header-of-inner my-3">Radio Button</h2>
+                        <form>
+                            <div class="d-flex align-items-center">
+                                <div class="form-check d-flex ">
+                                    <div class="mx-2">
+                                    <input class="form-check-input border-danger" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Option 1
+                                    </label>
+                                  </div>
+                                  <div class="form-check mx-2">
+                                    <input class="form-check-input border-danger" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                      Option 2
+                                    </label>
+                                  </div>
+                                </div>
+                                
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="analysis-main-content-form-tags">
+                        <h2 class="file-upload-header-of-inner my-3">Checkbox</h2>
+                        <form>
+                            <div class="d-flex align-items-center">
+                                <div class="form-check d-flex ">
+                                    <div class="mx-2">
+                                    <input class="form-check-input border-danger" type="checkbox" name="flexCheckDefault1" id="flexCheckDefault1">
+                                    <label class="form-check-label" for="flexCheckDefault1">
+                                      Option 1
+                                    </label>
+                                  </div>
+                                  <div class="form-check mx-2">
+                                    <input class="form-check-input border-danger" type="checkbox" name="flexCheckDefault1" id="flexCheckDefault1" >
+                                    <label class="form-check-label" for="flexCheckDefault1">
+                                      Option 2
+                                    </label>
+                                  </div>
+                                </div>
+                                
+                            </div>
+
+                        </form>
+                    </div>
+                    
+                    <p class="analysis-form-header">Snackbar</p>
+                    <div class="analysis-main-content-form-tags">
+                        <form>
+                            <div class="row align-items-center bg-white snackbar-images my-3">
+                                <div class="col">
+                                    <label class="visually-hidden" for="autoSizingInputGroup">This is an error Message</label>
+                                    <div class="input-group border border-danger">
+                                      <div class="input-group-text border-white"><img src="./images/error-icon.svg"></div>
+                                      <input type="text" class="form-control text-danger  border-white" id="autoSizingInputGroup" value="This is an error Message">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label class="visually-hidden" for="autoSizingInputGroup">This is an Information Message</label>
+                                    <div class="input-group border border-info">
+                                      <div class="input-group-text border-white"><img src="./images/info-icon.svg"></div>
+                                      <input type="text" class="form-control text-info  border-white" id="autoSizingInputGroup" value="This is an Information Message">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center bg-white snackbar-images my-3">
+                                <div class="col">
+                                    <label class="visually-hidden" for="autoSizingInputGroup">This is a Warning Message!</label>
+                                    <div class="input-group border border-warning">
+                                      <div class="input-group-text border-white"><img src="./images/warning-icon.svg"></div>
+                                      <input type="text" class="form-control text-warning  border-white" id="autoSizingInputGroup" value="This is a Warning Message!">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label class="visually-hidden" for="autoSizingInputGroup">This is a Success Message!</label>
+                                    <div class="input-group border border-success">
+                                      <div class="input-group-text border-white"><img src="./images/success-icon.svg"></div>
+                                      <input type="text" class="form-control text-success  border-white" id="autoSizingInputGroup" value="This is a Success Message!">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <p class="analysis-form-header">Call to action</p>
+                    <div class="analysis-main-content-form-tags call-to-action-btns">
+                        <form action="">
+                            <button type="button" class="text-light border border-danger" id="call-to-action-primary">Primary</button>
+                            <button type="button" class="" id="call-to-action-secondary">Secondary</button>
+                            
+                        </form>
+                    </div>
+                    <p class="analysis-form-header">Tabs</p>
+                    <div class="analysis-main-content-form-tags ">
+                        <form action="">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active bg-white text-danger" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tab 1</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link bg-white text-dark" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Tab 2</button>
+                                </li>
+                                <li class="nav-item " role="presentation">
+                                  <button class="nav-link bg-white text-dark" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Tab 3</button>
+                                </li>
+                                
+                              </ul>
+                              <hr>
+                              <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active bg-white" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navig</div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">This is some placeholder content the Profile tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">This is some placeholder content the Contact tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
+                                
+                              </div>
+                        </form>
                     </div>
                 </div>
+
             </div>
 
         </div>
