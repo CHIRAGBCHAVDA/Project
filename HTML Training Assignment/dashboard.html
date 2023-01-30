@@ -18,8 +18,12 @@
     <div class="dashboard-container">
 
         <div class="dashboard-header">
+
             <div class="dashboard-left">
+
+
                 <img src="./images/menu-bar.svg" alt="menu-bar" id="dashboard-menubar">
+
                 <img src="./images/header-logo.svg" alt="hero-logo" id="dashboard-header-logo">
 
             </div>
@@ -33,9 +37,14 @@
             </div>
         </div>
 
+
         <div class="dashboard-main-wrapper">
+            <input type="checkbox" name="chck1" id="chck1">
+            <label for="chck1"><img src="./images/menu-bar.svg" alt="menu-bar" id="dashboard-menubar-dummy">
+            </label>
 
             <div class="dashboard-left-navbar">
+
                 <div class="dashboard-nav-buttons dashboard-nav-text dashboard-active">
                     <img src="./images/dashboard-active.svg" alt="dashboard-icon" id="dashboard-active-icon">
                     <p> Dashboard </p>
@@ -152,115 +161,133 @@
                             <img src="./images/pie-chart.svg" alt="pie-chart">
                         </div>
                         <div class="dashboard-right-graph-bullets">
-                           <li id="li-1">United States Of America</li>
-                           <li id="li-2">Canada</li>
-                           <li id="li-3">Russia</li>
-                           <li id="li-4">India</li>
+                            <li id="li-1">United States Of America</li>
+                            <li id="li-2">Canada</li>
+                            <li id="li-3">Russia</li>
+                            <li id="li-4">India</li>
                         </div>
                     </div>
                 </div>
 
                 <div class="dashboard-invoices-wrapper">
 
-                
-                <div class="dashboard-invoices">
-                    <div class="dashboard-invoices-header">
-                        <h2 id="dashboard-invoices-header-left">
-                            Invoices
-                        </h2>
-                        <h5 id="dashboard-invoices-header-text-right">
-                            View All
-                        </h5>
+
+                    <div class="dashboard-invoices">
+                        <div class="dashboard-invoices-header">
+                            <h2 id="dashboard-invoices-header-left">
+                                Invoices
+                            </h2>
+                            <h5 id="dashboard-invoices-header-text-right">
+                                View All
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="invoices-table">
+                        <table id="dashboard-invoice-table" class="table">
+                            <tbody>
+                                <tr class="dashboard-invoice-table-header">
+                                    <th>INVOICE</th>
+                                    <th>COMPANY NAME</th>
+                                    <th>EMAIL</th>
+                                    <th>DUE DATE</th>
+                                    <th>STATUS</th>
+                                    <th>AMOUNT</th>
+                                </tr>
+
+                                <tr>
+                                    <td>651535</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td>
+                                        <div class="invoice-status-box-paid"> Paid</div>
+                                    </td>
+                                    <td>$47,800</td>
+                                </tr>
+                                <tr>
+                                    <td>558612</td>
+                                    <td>Other</td>
+                                    <td>jessica.hanson@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td>
+                                        <div class="invoice-status-box-paid"> Paid</div>
+                                    </td>
+                                    <td>$98,000</td>
+                                </tr>
+                                <tr>
+                                    <td>558612</td>
+                                    <td>Vendor</td>
+                                    <td>alma.lawson@example.com</td>
+                                    <td>8 Sep, 2020</td>
+                                    <td>
+                                        <div class="invoice-status-box-paid"> Paid</div>
+                                    </td>
+                                    <td>$20,900</td>
+                                </tr>
+                                <tr>
+                                    <td>558612</td>
+                                    <td>Property Management Company</td>
+                                    <td>kenzi.lawson@example.com</td>
+                                    <td>22 Oct, 2020</td>
+                                    <td>
+                                        <div class="invoice-status-box-paid"> Paid</div>
+                                    </td>
+                                    <td>$10,570</td>
+                                </tr>
+                                <tr>
+                                    <td>651535</td>
+                                    <td>Subcontractor Company</td>
+                                    <td>jackson.graham@example.com</td>
+                                    <td>1 Feb, 2020</td>
+                                    <td>
+                                        <div class="invoice-status-box-failed">Failed</div>
+                                    </td>
+                                    <td>$10,200</td>
+                                </tr>
+                                <tr>
+                                    <td>653518</td>
+                                    <td>Mortgage Company</td>
+                                    <td>felicia.reid@example.com</td>
+                                    <td>22 Oct, 2020</td>
+                                    <td>
+                                        <div class="invoice-status-box-pending">Pending</div>
+                                    </td>
+                                    <td>$12,600</td>
+                                </tr>
+                                <tr>
+                                    <td>487441</td>
+                                    <td>TPA</td>
+                                    <td>dolores.chambers@example.com</td>
+                                    <td>21 Sep, 2020</td>
+                                    <td>
+                                        <div class="invoice-status-box-paid"> Paid</div>
+                                    </td>
+                                    <td>$11,170</td>
+                                </tr>
+                                <tr>
+                                    <td>267400</td>
+                                    <td>Fire Department</td>
+                                    <td>nevaeh.simmons@example.com</td>
+                                    <td>17 Oct, 2020</td>
+                                    <td>
+                                        <div class="invoice-status-box-failed">Failed</div>
+                                    </td>
+                                    <td>$28,000</td>
+                                </tr>
+                                <tr id="last-row-of-invoice">
+                                    <td>449003</td>
+                                    <td>Insurance Carrier</td>
+                                    <td>curtis.weaver@example.com</td>
+                                    <td>21 Sep, 2020</td>
+                                    <td>
+                                        <div class="invoice-status-box-paid"> Paid</div>
+                                    </td>
+                                    <td>$10,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="invoices-table">
-                    <table id="dashboard-invoice-table" class="table">
-                        <tbody>
-                        <tr class="dashboard-invoice-table-header">
-                            <th>INVOICE</th>
-                            <th>COMPANY NAME</th>
-                            <th>EMAIL</th>
-                            <th>DUE DATE</th>
-                            <th>STATUS</th>
-                            <th>AMOUNT</th>
-                        </tr>
-                        
-                            <tr>
-                                <td>651535</td>
-                                <td>Public Adjusting Firm</td>
-                                <td>georgia.young@example.com</td>
-                                <td>24 May, 2020</td>
-                                <td><div class="invoice-status-box-paid"> Paid</div></td>
-                                <td>$47,800</td>
-                            </tr>
-                            <tr>
-                                <td>558612</td>
-                                <td>Other</td>
-                                <td>jessica.hanson@example.com</td>
-                                <td>24 May, 2020</td>
-                                <td><div class="invoice-status-box-paid"> Paid</div></td>
-                                <td>$98,000</td>
-                            </tr>
-                            <tr>
-                                <td>558612</td>
-                                <td>Vendor</td>
-                                <td>alma.lawson@example.com</td>
-                                <td>8 Sep, 2020</td>
-                                <td><div class="invoice-status-box-paid"> Paid</div></td>
-                                <td>$20,900</td>
-                            </tr>
-                            <tr>
-                                <td>558612</td>
-                                <td>Property Management Company</td>
-                                <td>kenzi.lawson@example.com</td>
-                                <td>22 Oct, 2020</td>
-                                <td><div class="invoice-status-box-paid"> Paid</div></td>
-                                <td>$10,570</td>
-                            </tr>
-                            <tr>
-                                <td>651535</td>
-                                <td>Subcontractor Company</td>
-                                <td>jackson.graham@example.com</td>
-                                <td>1 Feb, 2020</td>
-                                <td><div class="invoice-status-box-failed">Failed</div></td>
-                                <td>$10,200</td>
-                            </tr>
-                            <tr>
-                                <td>653518</td>
-                                <td>Mortgage Company</td>
-                                <td>felicia.reid@example.com</td>
-                                <td>22 Oct, 2020</td>
-                                <td><div class="invoice-status-box-pending">Pending</div></td>
-                                <td>$12,600</td>
-                            </tr>
-                            <tr>
-                                <td>487441</td>
-                                <td>TPA</td>
-                                <td>dolores.chambers@example.com</td>
-                                <td>21 Sep, 2020</td>
-                                <td><div class="invoice-status-box-paid"> Paid</div></td>
-                                <td>$11,170</td>
-                            </tr>
-                            <tr>
-                                <td>267400</td>
-                                <td>Fire Department</td>
-                                <td>nevaeh.simmons@example.com</td>
-                                <td>17 Oct, 2020</td>
-                                <td><div class="invoice-status-box-failed">Failed</div></td>
-                                <td>$28,000</td>
-                            </tr>
-                            <tr id="last-row-of-invoice">
-                                <td>449003</td>
-                                <td>Insurance Carrier</td>
-                                <td>curtis.weaver@example.com</td>
-                                <td>21 Sep, 2020</td>
-                                <td><div class="invoice-status-box-paid"> Paid</div></td>
-                                <td>$10,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
             </div>
 
 
