@@ -540,6 +540,9 @@ border-radius: 18px;
 #flexRadioDefault2:checked:after {
   background-color: #C8242F;
 }
+input[type="checkbox"]{
+  accent-color: #C8242F;
+}
 
 .snackbar-images img{
   width: 15px;
@@ -557,4 +560,15 @@ border-radius: 18px;
   height: 44px;
   border: 1px solid #C8242F;
   border-radius: 22px;
+}
+.analysis-main-content input{
+  border: 1px solid #ADADAD;
+border-radius: 5px;
+}
+.analysis-main-content input ::placeholder{
+  opacity: 0.5;
+
+}
+.third-column-disable-input{
+  border: 1px dashed gray;
 }

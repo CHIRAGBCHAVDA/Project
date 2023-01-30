@@ -79,7 +79,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="dropdown">&nbsp;</label>
-                                <select class="form-select" name="dropdown" aria-label="Dropdown">
+                                <select class="form-select ps-4" name="dropdown" aria-label="Dropdown">
                                     <option selected>Dropdown</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
@@ -89,7 +89,7 @@
                             
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1" class="form-label">&nbsp;</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Multiple Line"></textarea>
+                                <textarea class="form-control ps-4" id="exampleFormControlTextarea1" rows="3" placeholder="Multiple Line"></textarea>
                             </div>
                         </form>
                     </div>
@@ -103,7 +103,7 @@
                                 <div class="col">
                                     <div class="form-outline ">
                                         <input type="text" id="typeText" class="form-control border bg-white" />
-                                        <label class="form-label" for="typeText">Username</label>
+                                        <label class="form-label ps-3" for="typeText">Username</label>
                                       </div>
                                 </div>
                             </div>
@@ -114,8 +114,8 @@
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
-                                        <label for="dropdown">&nbsp;</label>
-                                        <select class="form-select" name="dropdown" aria-label="Dropdown">
+                                        <label for="dropdown" class="">&nbsp;</label>
+                                        <select class="form-select bg-white ps-4" name="dropdown" aria-label="Dropdown" disabled>
                                             <option selected>Dropdown</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -135,19 +135,19 @@
                                 <div class="col">
                                     <div class="form-outline ">
                                         <input type="text" id="typeText" class="form-control border border-danger bg-white" />
-                                        <label class="form-label text-dark" for="typeText">Focus</label>
+                                        <label class="form-label text-dark ps-3" for="typeText">Focus</label>
                                       </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-outline">
                                         <input type="password" id="typePassword" class="form-control border bg-white" />
-                                        <label class="form-label" for="typePassword">Password input</label>
+                                        <label class="form-label ps-3" for="typePassword">Password input</label>
                                       </div>
                                 </div>
                                 <div class="col">
-                                    <div class="form-outline">
-                                        <input class="form-control disabled" id="formControlReadonly" type="text" value="Readonly input here..." aria-label="John Doe" readonly/>
-                                        <label class="form-label" for="formControlReadonly">Disabled</label>
+                                    <div class="form-outline third-column-disable-input">
+                                        <input class="form-control disabled " id="formControlReadonly" type="text" value="John Doe" aria-label="John Doe" readonly/>
+                                        <label class="form-label ps-3" for="formControlReadonly">Disabled</label>
                                       </div>
                                 </div>
                             </div>
@@ -237,14 +237,14 @@
                             <div class="d-flex align-items-center">
                                 <div class="form-check d-flex ">
                                     <div class="mx-2">
-                                    <input class="form-check-input border-danger" type="checkbox" name="flexCheckDefault1" id="flexCheckDefault1">
+                                    <input class="form-check-input border-danger" type="checkbox" name="flexCheckDefault1" id="flexCheckDefault1" disabled>
                                     <label class="form-check-label" for="flexCheckDefault1">
                                       Option 1
                                     </label>
                                   </div>
                                   <div class="form-check mx-2">
-                                    <input class="form-check-input border-danger" type="checkbox" name="flexCheckDefault1" id="flexCheckDefault1" >
-                                    <label class="form-check-label" for="flexCheckDefault1">
+                                    <input class="form-check-input border-danger bg-danger " type="checkbox" name="flexCheckDefault1" id="flexCheckDefault2" >
+                                    <label class="form-check-label " for="flexCheckDefault1">
                                       Option 2
                                     </label>
                                   </div>
@@ -296,32 +296,29 @@
                     <div class="analysis-main-content-form-tags call-to-action-btns">
                         <form action="">
                             <button type="button" class="text-light border border-danger" id="call-to-action-primary">Primary</button>
-                            <button type="button" class="" id="call-to-action-secondary">Secondary</button>
+                            <button type="button" class="bg-white" id="call-to-action-secondary">Secondary</button>
                             
                         </form>
                     </div>
                     <p class="analysis-form-header">Tabs</p>
                     <div class="analysis-main-content-form-tags ">
                         <form action="">
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link active bg-white text-danger" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tab 1</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link bg-white text-dark" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Tab 2</button>
-                                </li>
-                                <li class="nav-item " role="presentation">
-                                  <button class="nav-link bg-white text-dark" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Tab 3</button>
-                                </li>
-                                
-                              </ul>
-                              <hr>
-                              <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active bg-white" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navig</div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">This is some placeholder content the Profile tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
-                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">This is some placeholder content the Contact tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
-                                
-                              </div>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item bg-white"><a href="#description" class="home1 nav-link active border-bottom border-danger text-danger bg-white " data-toggle="tab">Tab 1</a></li>
+                                <li class="nav-item"><a href="#characteristics" class="home2 nav-link  text-dark bg-white opacity-50" data-toggle="tab">Tab 2</a></li>
+                                <li class="nav-item"><a href="#opinion" class="home3 nav-link  text-dark bg-white opacity-50" data-toggle="tab">Tab 3</a></li>
+                            </ul>
+                            <div class="tab-content my-2">
+                                <div class="tab-pane fade show active" id="#description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                                </div>
+                                <div class="tab-pane fade " id="#characteristics">
+                                    hi
+                                </div>
+                                <div class="tab-pane fade " id="#opinion">
+
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
