@@ -2,15 +2,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innerpage</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/mdb.min.css">
     <script src="./js/mdb.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -18,8 +18,12 @@
     <div class="dashboard-container">
 
         <div class="dashboard-header">
+
             <div class="dashboard-left">
+
+
                 <img src="./images/menu-bar.svg" alt="menu-bar" id="dashboard-menubar">
+
                 <img src="./images/header-logo.svg" alt="hero-logo" id="dashboard-header-logo">
 
             </div>
@@ -33,8 +37,11 @@
             </div>
         </div>
 
-        <div class="dashboard-main-wrapper">
 
+        <div class="dashboard-main-wrapper">
+            <input type="checkbox" name="chck1" id="chck1">
+            <label for="chck1"><img src="./images/menu-bar.svg" alt="menu-bar" id="dashboard-menubar-dummy">
+            </label>
             <div class="dashboard-left-navbar">
                 <div class="dashboard-nav-buttons dashboard-nav-text ">
                     <img src="./images/dashboard-default.svg" alt="dashboard-icon">
@@ -66,263 +73,322 @@
                 </div>
             </div>
 
-            <div class="dashboard-main-content">
-                <p class="dashboard-header-text">Analysis</p>
+            <div class="innerpage-wrapper">
+                <section class="page">
+                    <!-- <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+                        aria-labelledby="offcanvasResponsiveLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">
+                                <img src="./images/header-logo.svg" alt="">
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="mb-0">
+                                <div class="sidebar">
+                                    <div class="sidebar-wrapper">
+                                        <div class="sidebar-items">
+                                            <div class="sidebar-item item-1">
+                                                <img class="dashboard-sidebar-icon active-img"
+                                                    src="./images/dashboard-active.svg" alt="" />
+                                                <h6 class="sidebar-text active-text">Dashboard</h6>
+                                            </div>
+                                            <div class="sidebar-item item-2">
+                                                <img class="dashboard-sidebar-icon" src="./images/graph-default.svg"
+                                                    alt="" />
+                                                <h6 class="sidebar-text">Analysis</h6>
+                                            </div>
+                                            <div class="sidebar-item item-3">
+                                                <img class="dashboard-sidebar-icon" src="./images/inbox-default.svg"
+                                                    alt="" />
+                                                <h6 class="sidebar-text">Inbox</h6>
+                                            </div>
+                                            <div class="sidebar-item item-4">
+                                                <img class="dashboard-sidebar-icon" src="./images/clock-default.svg"
+                                                    alt="" />
+                                                <h6 class="sidebar-text">History</h6>
+                                            </div>
+                                            <div class="sidebar-item item-5">
+                                                <img class="dashboard-sidebar-icon" src="./images/user-default.svg"
+                                                    alt="" />
+                                                <h6 class="sidebar-text">Users</h6>
+                                            </div>
+                                            <div class="sidebar-item item-6">
+                                                <img class="dashboard-sidebar-icon"
+                                                    src="./images/maintenance-default.svg" alt="" />
+                                                <h6 class="sidebar-text">Maintenance</h6>
+                                            </div>
+                                            <div class="sidebar-item item-7">
+                                                <img class="dashboard-sidebar-icon" src="./images/setting-default.svg"
+                                                    alt="" />
+                                                <h6 class="sidebar-text">Setting</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
 
-                <div class="analysis-main-content">
-                    <p class="analysis-form-header">One column</p>
-                    <div class="analysis-main-content-form-tags">
-                        <form>
-                            <div class="form-group">
-                              <!-- <label for="exampleFormControlInput1">&nbsp;</label> -->
-                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="dropdown">&nbsp;</label>
-                                <select class="form-select ps-4" name="dropdown" aria-label="Dropdown">
-                                    <option selected>Dropdown</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                  </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1" class="form-label">&nbsp;</label>
-                                <textarea class="form-control ps-4" id="exampleFormControlTextarea1" rows="3" placeholder="Multiple Line"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <p class="analysis-form-header">Two column</p>
-                    <div class="analysis-main-content-form-tags">
-                        <form>
-                            <div class="row align-items-center">
-                                <div class="col">
-                                  <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                    <div class="analysis-form off-white-bg">
+                        <div class="page-title">
+                            <h5>Analysis</h5>
+                        </div>
+                        <div class="analysis-form-wrapper white-bg">
+                            <div class="one-column">
+                                <div class="sub-title">
+                                    <span>One Column</span>
                                 </div>
-                                <div class="col">
-                                    <div class="form-outline ">
-                                        <input type="text" id="typeText" class="form-control border bg-white" />
-                                        <label class="form-label ps-3" for="typeText">Username</label>
-                                      </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <label for="">&nbsp;</label>
-                                    <input type="password" class="form-control" placeholder="Password" aria-label="First name">
-                                </div>
-                                <div class="col">
+                                <form>
                                     <div class="form-group">
-                                        <label for="dropdown" class="">&nbsp;</label>
-                                        <select class="form-select bg-white ps-4" name="dropdown" aria-label="Dropdown" disabled>
+                                        <input type="email" class="form-control mb-4" id="exampleFormControlInput1"
+                                            placeholder="Name" />
+                                    </div>
+                                    <div class="form-group dropdown">
+                                        <label for="dropdown"></label>
+                                        <select class="form-select" name="dropdown" aria-label="Dropdown">
                                             <option selected>Dropdown</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
-                                          </select>
+                                        </select>
+                                    </div>
+                                    <div class="mt-4">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                            placeholder="Multiple line"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="two-column">
+                                <div class="sub-title">
+                                    <span>Two Column</span>
+                                </div>
+                                <form>
+                                    <div class="d-flex w-100 justify-content-between two-column-input-1">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control w-40 two-field"
+                                                id="exampleFormControlInput1" placeholder="Name" />
+                                        </div>
+                                        <div class="did-floating-label-content">
+                                            <input class="form-control did-floating-input two-field" type="text"
+                                                placeholder="" />
+                                            <label class="did-floating-label">User Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex w-100 justify-content-between two-column-input-2">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control two-field"
+                                                id="exampleFormControlInput1" placeholder="Password" />
+                                        </div>
+                                        <div class="">
+                                            <select class="form-select two-field" name="dropdown" aria-label="Dropdown">
+                                                <option selected>Dropdown</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="three-column">
+                                <div class="sub-title">
+                                    <span>Three Column</span>
+                                </div>
+                                <div class="d-flex justify-content-between three-column-inputs">
+                                    <div class="did-floating-label-content">
+                                        <input class="form-control did-floating-input three-column-field" type="text"
+                                            placeholder="" style="border: 1px solid #c8242f" />
+                                        <label class="did-floating-label">Focus</label>
+                                    </div>
+
+                                    <div class="did-floating-label-content">
+                                        <input class="form-control did-floating-input three-column-field"
+                                            type="password" placeholder="" />
+                                        <label class="did-floating-label">Password</label>
+                                    </div>
+
+                                    <div class="did-floating-label-content">
+                                        <input class="form-control disabled-field did-floating-input three-column-field"
+                                            type="text" placeholder="" style="
+                                background: rgb(255, 251, 251);
+                                border-style: dashed;
+                              " disabled />
+                                        <label class="did-floating-label">Disabled</label>
                                     </div>
                                 </div>
                             </div>
-                            
-                        </form>
-                    </div>
 
-                    <p class="analysis-form-header">Three column</p>
-                    <div class="analysis-main-content-form-tags">
-                        <form>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-outline ">
-                                        <input type="text" id="typeText" class="form-control border border-danger bg-white" />
-                                        <label class="form-label text-dark ps-3" for="typeText">Focus</label>
-                                      </div>
+                            <div class="four-column-main">
+                                <div class="sub-title">
+                                    <span>Four Column</span>
                                 </div>
-                                <div class="col">
-                                    <div class="form-outline">
-                                        <input type="password" id="typePassword" class="form-control border bg-white" />
-                                        <label class="form-label ps-3" for="typePassword">Password input</label>
-                                      </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-outline third-column-disable-input">
-                                        <input class="form-control disabled " id="formControlReadonly" type="text" value="John Doe" aria-label="John Doe" readonly/>
-                                        <label class="form-label ps-3" for="formControlReadonly">Disabled</label>
-                                      </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <p class="analysis-form-header">Four column</p>
-                    <div class="analysis-main-content-form-tags">
-                        <form>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-outline">
-                                        <input type="text" class="form-control is-invalid bg-white border" id="validationServer03" required />
-                                        <label for="validationServer03" class="form-label">Designation</label>
-                                        <div class="invalid-feedback">Enter Valid data</div>
-                                      </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-outline">
-                                        <input type="text" id="formTextExample1" class="form-control border bg-white" aria-describedby="textExample1" />
-                                        <label class="form-label" for="formTextExample1">Name</label>
-                                      </div>
-                                      <div id="textExample1" class="form-text">
-                                        Enter your full name as per ID
-                                      </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-outline ">
-                                        <input type="text" id="typeText" class="form-control border bg-white" />
-                                        <label class="form-label" for="typeText">Username</label>
-                                      </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <select class="form-select bg-white border" name="dropdown" aria-label="Dropdown">
+                                <div class="d-flex justify-content-between w-100 four-columns-inputs">
+                                    <div class="did-floating-label-content">
+                                        <input class="form-control did-floating-input two-field is-invalid four-column"
+                                            type="text" placeholder="" id="validationServer03" />
+                                        <label class="did-floating-label">User Name</label>
+                                        <div class="invalid-feedback" style="padding-left: 15px">
+                                            Enter Valid data
+                                        </div>
+                                    </div>
+
+                                    <div class="did-floating-label-content">
+                                        <input class="form-control did-floating-input two-field is-invalid four-column"
+                                            type="text" placeholder="" id="validationServer03" />
+                                        <label class="did-floating-label">User Name</label>
+                                        <div class="invalid-feedback text-dark-emphasis" style="padding-left: 15px">
+                                            Enter your full name as per ID
+                                        </div>
+                                    </div>
+
+                                    <div class="did-floating-label-content">
+                                        <input class="form-control did-floating-input two-field four-column" type="text"
+                                            placeholder="" />
+                                        <label class="did-floating-label">User Name</label>
+                                    </div>
+
+                                    <div class="">
+                                        <select class="form-select four-column" name="dropdown" aria-label="Dropdown">
                                             <option selected>Dropdown</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
-                                          </select> 
+                                        </select>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <p class="analysis-form-header">Other Design Elements</p>
-                    <div class="analysis-main-content-form-tags my-3">
-                        <h2 class="file-upload-header-of-inner">File Upload</h2>
-                        <form>
-                            <div class="d-flex align-items-center">
 
-                                <label for="file-input" class="upload-image-and-text-wrapper border border-danger my-2">
-                                    <img src="./images/cloud-upload-icon.svg" alt="upload-image" class="upload-image">
-                                    <span id="upload-text">Upload</span>
-                                </label>
-                                <input type="file" name="file-input" class="d-none"> 
-                                <span class="text-gray mx-2">No item selected</span>
-                            </div>
-
-                        </form>
-                    </div>
-                    <div class="analysis-main-content-form-tags">
-                        <h2 class="file-upload-header-of-inner my-3">Radio Button</h2>
-                        <form>
-                            <div class="d-flex align-items-center">
-                                <div class="form-check d-flex ">
-                                    <div class="mx-2">
-                                    <input class="form-check-input border-danger" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                      Option 1
-                                    </label>
-                                  </div>
-                                  <div class="form-check mx-2">
-                                    <input class="form-check-input border-danger" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                      Option 2
-                                    </label>
-                                  </div>
+                            <div class="other-design-element-main">
+                                <div class="sub-title">
+                                    <span>Other Design Elements</span>
                                 </div>
-                                
-                            </div>
-
-                        </form>
-                    </div>
-                    <div class="analysis-main-content-form-tags">
-                        <h2 class="file-upload-header-of-inner my-3">Checkbox</h2>
-                        <form>
-                            <div class="d-flex align-items-center">
-                                <div class="form-check d-flex ">
-                                    <div class="mx-2">
-                                    <input class="form-check-input border-danger" type="checkbox" name="flexCheckDefault1" id="flexCheckDefault1" disabled>
-                                    <label class="form-check-label" for="flexCheckDefault1">
-                                      Option 1
-                                    </label>
-                                  </div>
-                                  <div class="form-check mx-2">
-                                    <input class="form-check-input border-danger bg-danger " type="checkbox" name="flexCheckDefault1" id="flexCheckDefault2" >
-                                    <label class="form-check-label " for="flexCheckDefault1">
-                                      Option 2
-                                    </label>
-                                  </div>
-                                </div>
-                                
-                            </div>
-
-                        </form>
-                    </div>
-                    
-                    <p class="analysis-form-header">Snackbar</p>
-                    <div class="analysis-main-content-form-tags">
-                        <form>
-                            <div class="row align-items-center bg-white snackbar-images my-3">
-                                <div class="col">
-                                    <label class="visually-hidden" for="autoSizingInputGroup">This is an error Message</label>
-                                    <div class="input-group border border-danger">
-                                      <div class="input-group-text border-white"><img src="./images/error-icon.svg"></div>
-                                      <input type="text" class="form-control text-danger  border-white" id="autoSizingInputGroup" value="This is an error Message">
+                                <div class="upload">
+                                    <div class="sub-title-2">
+                                        <span>File Upload</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="upload-btn d-flex justify-content-center align-items-center">
+                                            <img class="mx-2" src="./images/cloud-upload-icon.svg" alt="" />
+                                            <span class="upload-text text-danger">Upload</span>
+                                        </div>
+                                        <div class="upload-file-text d-flex align-items-center mx-4">
+                                            <span> No item selected </span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <label class="visually-hidden" for="autoSizingInputGroup">This is an Information Message</label>
-                                    <div class="input-group border border-info">
-                                      <div class="input-group-text border-white"><img src="./images/info-icon.svg"></div>
-                                      <input type="text" class="form-control text-info  border-white" id="autoSizingInputGroup" value="This is an Information Message">
+                                <div class="radio-button">
+                                    <div class="sub-title-2">
+                                        <span>Radio Button</span>
+                                    </div>
+                                    <div class="radio-options d-flex">
+                                        <div class="">
+                                            <input type="radio" id="auto" value="auto" />
+                                            <label for="auto">Option 1</label><br />
+                                        </div>
+                                        <div class="form-check mx-3">
+                                            <input type="radio" id="Red" value="Red" />
+                                            <label for="Red">Option 2</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row align-items-center bg-white snackbar-images my-3">
-                                <div class="col">
-                                    <label class="visually-hidden" for="autoSizingInputGroup">This is a Warning Message!</label>
-                                    <div class="input-group border border-warning">
-                                      <div class="input-group-text border-white"><img src="./images/warning-icon.svg"></div>
-                                      <input type="text" class="form-control text-warning  border-white" id="autoSizingInputGroup" value="This is a Warning Message!">
+                                <div class="check-box">
+                                    <div class="sub-title-2">
+                                        <span>Checkbox</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-1 d-flex">
+                                            <label class="contain">
+                                                <input type="checkbox" disabled />
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <div class="check-text">
+                                                <span>Option 1</span>
+                                            </div>
+                                        </div>
+                                        <div class="check-2 mx-4">
+                                            <label class="contain">
+                                                <input type="checkbox" checked="checked" />
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <div class="check-text">
+                                                <span>Option 2</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <label class="visually-hidden" for="autoSizingInputGroup">This is a Success Message!</label>
-                                    <div class="input-group border border-success">
-                                      <div class="input-group-text border-white"><img src="./images/success-icon.svg"></div>
-                                      <input type="text" class="form-control text-success  border-white" id="autoSizingInputGroup" value="This is a Success Message!">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <p class="analysis-form-header">Call to action</p>
-                    <div class="analysis-main-content-form-tags call-to-action-btns">
-                        <form action="">
-                            <button type="button" class="text-light border border-danger" id="call-to-action-primary">Primary</button>
-                            <button type="button" class="bg-white" id="call-to-action-secondary">Secondary</button>
-                            
-                        </form>
-                    </div>
-                    <p class="analysis-form-header">Tabs</p>
-                    <div class="analysis-main-content-form-tags ">
-                        <form action="">
-                            <ul class="nav nav-tabs">
-                                <li class="nav-item bg-white"><a href="#description" class="home1 nav-link active border-bottom border-danger text-danger bg-white " data-toggle="tab">Tab 1</a></li>
-                                <li class="nav-item"><a href="#characteristics" class="home2 nav-link  text-dark bg-white opacity-50" data-toggle="tab">Tab 2</a></li>
-                                <li class="nav-item"><a href="#opinion" class="home3 nav-link  text-dark bg-white opacity-50" data-toggle="tab">Tab 3</a></li>
-                            </ul>
-                            <div class="tab-content my-2">
-                                <div class="tab-pane fade show active" id="#description">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-                                </div>
-                                <div class="tab-pane fade " id="#characteristics">
-                                    hi
-                                </div>
-                                <div class="tab-pane fade " id="#opinion">
 
+                                <div class="snackbar">
+                                    <div class="sub-title-2">
+                                        <span>Snackbar</span>
+                                    </div>
+
+                                    <div class="snakes">
+                                        <div
+                                            class="d-flex align-item-center justify-content-between mb-3 snacks-fields-1">
+                                            <div class="snack-1 snack d-flex align-items-center">
+                                                <img src="./images/error-icon.svg " class="snack-img" alt="" />
+                                                <span class="mx-2">This is an error Message</span>
+                                            </div>
+                                            <div class="snack-2 snack d-flex align-items-center">
+                                                <img src="./images/info-icon.svg " class="snack-img" alt="" />
+                                                <span class="mx-2">This is an information Message</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-item-center justify-content-between snacks-fields-2">
+                                            <div class="snack-3 snack d-flex align-items-center">
+                                                <img src="./images/warning-icon.svg " class="snack-img" alt="" />
+                                                <span class="mx-2">This is a warning Message</span>
+                                            </div>
+                                            <div class="snack-4 snack d-flex align-items-center">
+                                                <img src="./images/success-icon.svg " class="snack-img" alt="" />
+                                                <span class="mx-2">This is a Success Message</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="call-to-action">
+                                    <div class="sub-title-2">
+                                        <span>Call to action</span>
+                                    </div>
+
+                                    <div class="buttons d-flex">
+                                        <div class="button-1 d-flex align-items-center justify-content-center">
+                                            Primary
+                                        </div>
+                                        <div class="button-2 d-flex align-items-center justify-content-center">
+                                            Secondary
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tabs-and-text">
+                                    <div class="tabs d-flex">
+                                        <span class="tab-1 tab text-center active-tab">Tab 1</span>
+                                        <span class="tab-2 tab text-center">Tab 2</span>
+                                        <span class="tab-3 tab text-center">Tab 3</span>
+                                    </div>
+                                    <div class="line">
+                                        <hr />
+                                    </div>
+                                    <div class="tab-text">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Similique expedita earum iusto praesentium tenetur
+                                            voluptatum voluptatem eaque aliquam. Aliquam ipsam natus
+                                            consequatur mollitia quis quasi, numquam dolore dolorum,
+                                            commodi pariatur odio excepturi sit blanditiis nam
+                                            facilis.lore Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing elit. Excepturi veniam illo ipsa perferendis
+                                            hic! Culpa cumque maxime porro, debitis veritatis itaque,
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
-
+                </section>
             </div>
 
         </div>
