@@ -158,14 +158,14 @@ input {
 
 .dashboard-container {
   height: 1359px;
-  width: 1560px;
+  max-width: 1560px;
   margin: auto;
 }
 
 .dashboard-header {
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .dashboard-left {
@@ -197,7 +197,7 @@ input {
   font: normal normal normal 16px/21px Roboto;
 }
 #dashboard-notification {
-  margin-left: 775.2px;
+  /* margin-left: 775.2px; */
 }
 #dashboard-profile {
   width: 44px;
