@@ -537,7 +537,11 @@ td {
   display: none;
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1560px) and (min-width:1024px) {
+  .dashboard-container {
+    width: 100vw;
+    overflow-x: auto;
+  }
 }
 @media screen and (max-width: 1023px) {
 }
