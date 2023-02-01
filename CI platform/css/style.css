@@ -1,0 +1,48 @@
+*{
+    font-family: 'Noto Sans';
+}
+.main-login-container-wrapper{
+    width: 1920px;
+    height: 983px;
+}
+.privacy-policy{
+    /* margin-top: 150px; */
+    position: relative;
+    top: 20%;   
+}
+.main-login-right-continer{
+    width: 576px;
+}
+.carousel-caption-text-h5{
+    font-size: 43px;
+    font-weight: 400;
+}
+.carousel-caption-para{
+    font-size: 16px;
+    font-weight: 100;
+}
+.login-form-label{
+    font-size: 16px;
+    font-weight: 100;
+}
+.login-p-a{
+    font-size: 14px;
+    font-weight: 100;
+    color: #414141;
+}
+/* ************************************ */
+
+
+.lost-password-forgot-header{
+    font-size: 22px;
+    color: #414141;
+}
+.lost-password-forgot-header-caption{
+    font-size: 14px;
+    font-weight: 100;
+    color: #414141;
+}
+#forgot-password-email-label{
+    font-size: 16px;
+    font-weight: 100;
+}
