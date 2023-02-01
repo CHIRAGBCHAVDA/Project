@@ -169,7 +169,6 @@ input {
 }
 
 .dashboard-left {
-  width: 242px;
   /* background-color: aqua; */
   display: flex;
   justify-content: center;
@@ -262,7 +261,7 @@ input {
 .dashboard-main-content {
   display: flex;
   flex-direction: column;
-  width: 1318px;
+  width: 100%;
   background: #fafafa;
 }
 .dashboard-header-text {
@@ -279,7 +278,7 @@ input {
   flex-direction: row;
   justify-content: space-between;
   justify-items: center;
-  width: 1217px;
+  /* width: 1217px; */
   margin-left: 50px;
 }
 .dashboard-insights-items {
@@ -316,7 +315,7 @@ input {
   font-size: 15px;
 }
 .dashboard-insights-items-wrapper {
-  width: 219px;
+  width: 160px;
   height: 116px;
   background-color: #ffffff;
   border-radius: 5px;
