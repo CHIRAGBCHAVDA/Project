@@ -6,13 +6,13 @@
 }
 .privacy-policy{
     /* margin-top: 150px; */
-     position: relative;
-    top: 227px;    
+     /* position: relative;
+    top: 227px;     */
      /* max-width: 401px; */
 }
 #privacy-policy-for-reg{
-    position: relative;
-    top: 61px;
+    /* position: relative;
+    top: 61px; */
 }
 .main-login-right-continer{
     /* max-width: 576px; */
@@ -63,7 +63,7 @@
     width: 100%;
 }
 .privacy-policy{
-    top:10%;
+
 }
 }
 @media screen and (max-width:992px){
@@ -109,7 +109,6 @@
 
 @media screen and (max-width:1756px){
     #privacy-policy-for-reg{
-        top: 2%;
     }
 }
 @media screen and (max-width:1440px){
@@ -117,7 +116,6 @@
         width: 340px;
     }
     #privacy-policy-for-reg{
-        top: 5px;
     }
 
 }
