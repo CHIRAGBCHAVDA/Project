@@ -51,10 +51,12 @@ select * from Department;
 
 --1. write a SQL query to find Employees who have the biggest salary in their Department
 
-Select D.dept_name,max(salary) [max salary] 
-from Employee E
-left join Department D on E.dept_id=D.dept_id
-group by D.dept_name;
+SELECT emp_name,salary 
+FROM employee 
+WHERE salary 
+IN (SELECT MAX(salary) 
+FROM employee 
+GROUP BY dept_id);
 go
 
 --2. write a SQL query to find Departments that have less than 3 people in it
