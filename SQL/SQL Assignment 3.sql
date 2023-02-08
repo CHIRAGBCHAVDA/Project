@@ -58,6 +58,18 @@ WHERE e.DEPT_ID
 IN (SELECT e.DEPT_ID
 FROM employee e3 WHERE e.SALARY IN(SELECT MAX(SALARY) FROM EMPLOYEE E2 wHERE e2.DEPT_ID = E.DEPT_ID  GROUP BY DEPT_ID)
 )GROUP BY e.dept_id,e.EMP_NAME ORDER BY E.DEPT_ID;
+--for null data run below
+SELECT d.dept_id,emp_name,salary 
+FROM employee e
+RIGHT JOIN department d
+ON e.dept_id = d.dept_id
+where d.dept_id+''+salary 
+IN(SELECT d.dept_id+''+max(salary)
+FROM employee e
+RIGHT JOIN department d
+ON e.dept_id = d.dept_id
+GROUP BY d.dept_id) or salary IS NULL
+
 
 
 --2. write a SQL query to find Departments that have less than 3 people in it
