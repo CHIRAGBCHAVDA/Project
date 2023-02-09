@@ -52,23 +52,32 @@ select * from Department;
 --1. write a SQL query to find Employees who have the biggest salary in their Department
 
 
-SELECT DISTINCT e.DEPT_ID,e.EMP_NAME,MAX(e.salary) MAX_SALARY
-FROM employee e
-WHERE e.DEPT_ID
-IN (SELECT e.DEPT_ID
-FROM employee e3 WHERE e.SALARY IN(SELECT MAX(SALARY) FROM EMPLOYEE E2 wHERE e2.DEPT_ID = E.DEPT_ID  GROUP BY DEPT_ID)
-)GROUP BY e.dept_id,e.EMP_NAME ORDER BY E.DEPT_ID;
+--SELECT DISTINCT e.DEPT_ID,e.EMP_NAME,MAX(e.salary) MAX_SALARY
+--FROM employee e
+--WHERE e.DEPT_ID
+--IN (SELECT e.DEPT_ID
+--FROM employee e3 WHERE e.SALARY IN(SELECT MAX(SALARY) FROM EMPLOYEE E2 wHERE e2.DEPT_ID = E.DEPT_ID  GROUP BY DEPT_ID)
+--)GROUP BY e.dept_id,e.EMP_NAME ORDER BY E.DEPT_ID;
 --for null data run below
-SELECT d.dept_id,emp_name,salary 
-FROM employee e
-RIGHT JOIN department d
-ON e.dept_id = d.dept_id
-where d.dept_id+''+salary 
-IN(SELECT d.dept_id+''+max(salary)
-FROM employee e
-RIGHT JOIN department d
-ON e.dept_id = d.dept_id
-GROUP BY d.dept_id) or salary IS NULL
+--SELECT d.dept_id,emp_name,salary 
+--FROM employee e
+--RIGHT JOIN department d
+--ON e.dept_id = d.dept_id
+--where d.dept_id+''+salary 
+--IN(SELECT d.dept_id+''+max(salary)
+--FROM employee e
+--RIGHT JOIN department d
+--ON e.dept_id = d.dept_id
+--GROUP BY d.dept_id) or salary IS NULL
+
+Ans : 
+SELECT D.dept_name, E.emp_name, E.salary
+FROM Department D
+LEFT JOIN (SELECT dept_id, MAX(salary) MaxSalary FROM Employee GROUP BY dept_id) MS 
+ON D.dept_id = MS.dept_id
+LEFT JOIN Employee E
+ON D.dept_id = E.dept_id
+WHERE E.salary = MS.MaxSalary or E.salary IS NULL
 
 
 
