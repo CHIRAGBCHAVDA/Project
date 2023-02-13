@@ -308,9 +308,12 @@
   align-items: center;
   margin-bottom: 5px;
 }
-.active-item {
-  background: #fff3f4 0% 0% no-repeat padding-box;
+.item-1{
+  background: #fff3f4;
 }
+/* .active-item {
+  background: #fff3f4 0% 0% no-repeat padding-box;
+} */
 .dashboard-sidebar-icon {
   width: 24px;
   height: 24px;
