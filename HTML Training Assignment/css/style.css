@@ -1019,6 +1019,8 @@ input[type="radio"] {
   top: -18px;
 }
 
+
+
 /* / /// inner page responsive  /// / */
 @media only screen and (min-width: 1316px) and (max-width: 1540px) {
   .two-field {
